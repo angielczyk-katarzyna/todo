@@ -1,0 +1,118 @@
+body {
+    background-color: black;
+    color: aliceblue;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.navigation {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+    margin: 10px;
+    border: 0.1vh solid white;
+    border-radius: 30px;
+    height: 14.8vh;
+}
+
+#wrapper {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2vh auto;
+}
+
+.notes {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 30%;
+    font-size: 1rem;
+    border-radius: 30px;
+    align-items: stretch;
+    color: black;
+    background-color: cornsilk;
+}
+
+
+
+
+.notes > input {
+    margin: 3rem;
+
+}
+
+input[type=text] {
+    text-align: center;
+    align-self: center;
+    background-color: transparent;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+input[type=checkbox] {
+    margin: auto 1rem;
+}
+
+
+.heather {
+    width: 100%;
+    border-bottom: 1px solid blue;
+    align-self: center;
+}
+
+.listName {
+    margin: 10px auto;
+    display: block;
+    font-size: 4rem;
+    color: aliceblue;
+    border: 1px solid rgb(255, 255, 255);
+    height: 50px;
+    width: 30%;
+}
+
+.inputs > input[type=text] {
+
+    background-color: white;
+    width: 30%;
+    margin: 0.3rem;
+
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+}
+
+.toDoDiv {
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: move;
+    user-select: none;
+}
+
+.strikeThrough {
+    text-decoration: line-through;
+}
+
+img {
+    max-width: 20px;
+    max-height: 20px;
+    justify-self: flex-end;
+    padding: 10px;
+}
+
+.inputValue {
+    flex-grow: 2;
+}
+
+.toDoDiv.dragging {
+    opacity: .5;
+}
